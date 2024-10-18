@@ -1,0 +1,114 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: "Arial", sans-serif;
+}
+
+.todo-app {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px; /* Ukuran tombol */
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.task-container {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ecf0f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+li button {
+  margin: 0 10px;
+}
+
+li button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+li button.edit-btn {
+  background-color: #f39c12;
+}
+
+li button.save-btn {
+  background-color: #2ecc71;
+}
+
+.task-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.task-container::-webkit-scrollbar-thumb {
+  background-color: #bdc3c7;
+  border-radius: 10px;
+}
